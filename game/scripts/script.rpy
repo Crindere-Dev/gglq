@@ -4,7 +4,7 @@
 # name of the character.
 
 define e = Character("Eileen")
-default show_quick_menu = True
+
 
 
 
@@ -12,6 +12,7 @@ default show_quick_menu = True
 # The game starts here.
 
 label start:
+    $ quick_menu = False
     scene test
     
     show screen pick
@@ -19,14 +20,14 @@ label start:
 
 label guy:
     scene test
-
-    show testguy  with dissolve
-    show screen continue
+    show may_base with dissolve
+    call screen select
     ""
 
 label continue:
     hide screen pick
     hide screen continue
-    scene test
-    "booo"
+    scene black with pixellate
+    
+    "ladderrrr"
     return

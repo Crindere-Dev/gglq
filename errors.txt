@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/script.rpy", line 28: end of line expected.
-    hide screen pick at left
-                     ^
+File "game/scripts/images.rpy", line 4: expected '=' not found.
+    image may_alpha 
+                    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sat Sep 23 08:28:50 2023
+Sun Sep 24 21:45:49 2023
