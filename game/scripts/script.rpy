@@ -6,7 +6,14 @@
 define e = Character("Eileen")
 
 
+label splashscreen:
+ scene black
+with Pause (1)
 
+show splash with dissolve
+with Pause(2)
+hide splash with dissolve
+return
 
 
 # The game starts here.

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/images.rpy", line 4: expected '=' not found.
-    image may_alpha 
-                    ^
+File "game/scripts/images.rpy", line 11: expected 'image_name_component' not found.
+    image 
+          ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sun Sep 24 21:45:49 2023
+Sun Sep 24 22:13:23 2023
