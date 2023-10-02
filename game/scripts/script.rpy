@@ -4,15 +4,16 @@
 # name of the character.
 
 define e = Character("Eileen")
+define morb = ImageDissolve("images/cooolio.png", 1.0, time_warp=_warper.easeout)
 
 
 label splashscreen:
  scene black
 with Pause (1)
 
-show splash with dissolve
+show splash with morb
 with Pause(2)
-hide splash with dissolve
+hide splash with morb
 return
 
 
@@ -20,9 +21,8 @@ return
 
 label start:
     $ quick_menu = False
-    scene test
-    
-    show screen pick
+    scene test with morb
+    show screen pick with pixellate
     ""
 
 label guy:
@@ -34,7 +34,7 @@ label guy:
 label continue:
     hide screen pick
     hide screen continue
-    scene black with pixellate
+    scene black with morb
     
     "ladderrrr"
     return

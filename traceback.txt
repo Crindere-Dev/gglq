@@ -1,24 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/images.rpy", line 4, in script
-    image may_alpha = ""
-Exception: An empty string cannot be used as a displayable.
+  File "game/scripts/options.rpy", line 114, in script
+    define config.window_show_transition = morb(.2)
+  File "game/scripts/options.rpy", line 114, in <module>
+    define config.window_show_transition = morb(.2)
+NameError: name 'morb' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/images.rpy", line 4, in script
-    image may_alpha = ""
-  File "D:\!renpy-7.4.5-sdk\renpy\ast.py", line 1241, in execute
-    renpy.exports.image(self.imgname, img)
-  File "D:\!renpy-7.4.5-sdk\renpy\exports.py", line 335, in image
-    d = renpy.easy.displayable(d)
-  File "D:\!renpy-7.4.5-sdk\renpy\easy.py", line 117, in displayable
-    raise Exception("An empty string cannot be used as a displayable.")
-Exception: An empty string cannot be used as a displayable.
+  File "game/scripts/options.rpy", line 114, in script
+    define config.window_show_transition = morb(.2)
+  File "D:\!renpy-7.4.5-sdk\renpy\ast.py", line 2508, in execute
+    self.set()
+  File "D:\!renpy-7.4.5-sdk\renpy\ast.py", line 2522, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "D:\!renpy-7.4.5-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/scripts/options.rpy", line 114, in <module>
+    define config.window_show_transition = morb(.2)
+NameError: name 'morb' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.1.23060707
 solbadguy 1.0
-Sun Sep 24 21:45:54 2023
+Mon Oct  2 04:21:15 2023

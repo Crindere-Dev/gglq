@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/scripts/images.rpy", line 11: expected 'image_name_component' not found.
-    image 
-          ^
+File "game/scripts/screens/screens.rpy", line 1610: expected 'word' not found.
+    style.button.hover_sound = "click.wav"
+         ^
+
+File "game/scripts/screens/screens.rpy", line 1611: expected 'word' not found.
+    style.button.activate_sound = "select.wav"
+         ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sun Sep 24 22:13:23 2023
+Mon Oct  2 04:26:21 2023
